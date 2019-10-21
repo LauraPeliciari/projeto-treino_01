@@ -10,7 +10,6 @@ const Header = () => {
           <li><a href="#shop">shop</a></li>
           <li><a href="#discover">discover</a></li>
           <li><a href="#stores">stores</a></li>
-          <li><a href="#stores">stores</a></li>
         </ul>
       </nav>
       <img src="" />
