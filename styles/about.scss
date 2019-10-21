@@ -1,0 +1,23 @@
+@import './styles/variables.scss';
+
+
+.about {
+  height: 1000px;
+  width: 1800px;
+  background-color: $color3;
+  padding: 20px;
+  margin-top: -50px;
+  border-radius: 8px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+// .main-about {
+//   background-color: rgb(231, 230, 230);
+//   max-width: 1000px;
+//   border-radius: 6px;
+//   padding: 20px;
+//   margin-top: -50px;
+//   margin-right: 200px;
+//   margin-left: 200px;
+// }

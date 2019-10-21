@@ -1,0 +1,25 @@
+@import './styles/variables.scss';
+
+
+.banner {
+  height: 1000px;
+  width: 100%;
+  background-image: url('../public/navy-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+  
+.main-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    color: $color5;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+  }
+}
