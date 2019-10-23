@@ -1,30 +1,55 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import Head from 'next/head';
 import Nav from '../components/nav';
 import Header from '../components/header';
 import Banner from '../components/banner';
 import About from '../components/about';
+import Footer from '../components/footer';
+import '../styles/main.scss';
 import '../styles/nav.scss';
 import '../styles/header.scss';
 import '../styles/banner.scss';
 import '../styles/about.scss';
+import '../styles/footer.scss';
 
 
-const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-    </Head>
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { className: 'hidden' };
 
-    <Nav />
+    this.handleScroll = this.handleScroll.bind(this);
+  }
 
-    <Header />
+  handleScroll() {
+    if (document.documentElement.scrollTop > 80) {
+      this.setState({
+        className: 'show'
+      })
+      //console.log(document.documentElement.scrollTop);
+    }
+  }
 
-    <Banner />
+  componentDidMount() {
+    window.onscroll = () => this.handleScroll()
+  }
+  
 
-    <About />
+  render() {
+    return (
+      <Fragment>
+        <Head>
+          <title>Home</title>
+        </Head>
+        <Nav />
+        <Header />
+        <Banner />
+        <About className={this.state.className}/>
+        <Footer />
+      </Fragment>
+    )
+  }
+}
 
-  </div>
-)
 
 export default Home

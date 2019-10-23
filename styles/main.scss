@@ -1,0 +1,14 @@
+@import './styles/variables.scss';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+body, body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.main-grid {
+  width: 100%;
+  padding: 0 40px;
+}
