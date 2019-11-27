@@ -2,6 +2,6 @@
 
 Single page aplication, done just for practicing. 
 
-React.js, Sass, JS, HTML, FontAwesome.
+Next.js, Sass, JS, HTML, FontAwesome.
 
 Link to Heroku: https://projeto-teste-01.herokuapp.com/
